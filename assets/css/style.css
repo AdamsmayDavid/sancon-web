@@ -13,24 +13,22 @@
 }
 
 body{
-  background-image:url"(assets/images/f2.jpg) !important";
+  background-image: url("assets/images/logo.png") !important;
+  
 }
 
 .navbar{
-  position: fixed;
-  top: 0;
   z-index: 10!important;
-  width: 100%;
-  
-
 }
+
+/* }
 .navbar-nav .nav-item .nav-link{
   color: rgb(255, 255, 255) !important;
 }
 
 .navbar-nav .nav-item .nav-link:active{
   color: rgb(0, 0, 0) !important;
-}
+} */
 
 
 
@@ -50,8 +48,9 @@ body{
  
 
 /* Float four columns side by side */
+
 .column {
-    float: left;
+    float: auto !important;
     width: 25%;
     padding: 0 10px;
   }
@@ -69,15 +68,15 @@ body{
   /* Responsive columns */
   @media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+      width: 50%;
       display: block;
-      margin-bottom: 20px;
+      padding:4px !important;
     }
   }
   
   /* Style the counter cards */
   .projects .card {
-    box-shadow:2px 2px 6px 0#2B3499;
+    box-shadow:2px 2px 6px 0 #2B3499;
     padding: 0px;
     text-align: center;
     /* color: #0275d8;     */
@@ -96,6 +95,14 @@ body{
     z-index: 1 !important;
     cursor: pointer !important;
     
+  }
+
+  .projects{
+  background-color: #FFC436;
+    height: 100% !important;
+    width: 100%;
+    padding: 5px !important;
+   
   }
 
   /* .projects img:hover{
@@ -126,17 +133,17 @@ body{
       }
     }
   
-    .bg-primary{
-      background-color:#1450A3!important;
+    .navbar{
+      background-color:#337CCF!important;
     }
     nav .scroll{
       color:black !important;
     }
   
-    .vision h1{
+    /* .vision h1{
       color: #1450A3;
       font-size: 5.5vh;
-    }
+    } */
 
     .about-us h1{
       color: #000000;
@@ -147,7 +154,7 @@ body{
       color: #000000;
      
     }
-    .services h1{
+    /* .services h1{
       color: #1450A3;
      
     }
@@ -155,11 +162,16 @@ body{
       color: #1450A3;
       font-size: 5.5vh;
       
-    }
+    } */
 
     .projects h1{
-      color: #1450A3;
+      color: #ffffff;
       font-size: 5.5vh;
+    } 
+
+    .projects p{
+      color: #337CCF !important;
+     
     }
 
     .column .card p{
@@ -309,3 +321,8 @@ body{
         transition: transform 0.5s ease-in-out;
       }
       
+
+      /* contact form */
+      .contact-form{
+        background-color:#337CCF !important;
+      }

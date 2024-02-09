@@ -4,22 +4,22 @@
         // Once the container has finished, the scroll appears
         if ($('#container').hasClass('loaded')) {
             // It is so that once the container is gone, the entire preloader section is deleted
-            $('#preloader').delay(1000).queue(function() {
+            $('#preloader').delay(800).queue(function() {
             $(this).remove();
             });}
         }, 2000);});
 
     // for navbar
-     var nav = document.querySelector('nav');
+//      var nav = document.querySelector('nav');
 
-   window.addEventListener('scroll', function () {
-       if(window.pageYOffset > 100) {
-          nav.classList.add('bg-primary',  'shadow');
+//    window.addEventListener('scroll', function () {
+//        if(window.pageYOffset > 100) {
+//           nav.classList.add('bg-primary',  'shadow');
 
-      } else {
-           nav.classList.remove('bg-primary', 'shadow');
-     }
- });
+//       } else {
+//            nav.classList.remove('bg-primary', 'shadow');
+//      }
+//  });
 
 
 // var hihi ="10" + + +"10" 
