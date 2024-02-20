@@ -17,6 +17,12 @@ body{
   
 }
 
+/* contact on top */
+#topContent{
+  background-color: #3D3B40;
+  color: white ;
+}
+
 .navbar{
   z-index: 10!important;
 }
@@ -76,7 +82,7 @@ body{
   
   /* Style the counter cards */
   .projects .card {
-    box-shadow:2px 2px 6px 0 #2B3499;
+    box-shadow:2px 2px 6px 0 #525CEB;
     padding: 0px;
     text-align: center;
     /* color: #0275d8;     */
@@ -84,6 +90,11 @@ body{
     transition: transform .1s;
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3D3B40 !important;
+  }
+
+  #projects p{
+    color: white !important;
   }
   
   .projects .card:hover{
@@ -94,15 +105,21 @@ body{
     transform: scale(1.2) !important;
     z-index: 1 !important;
     cursor: pointer !important;
+
     
   }
 
   .projects{
-  background-color: #FFC436;
+    background-color: #3D3B40;
     height: 100% !important;
     width: 100%;
     padding: 5px !important;
    
+  }
+
+  /* services */
+  .services {
+    background-color: #3D3B40 !important;
   }
 
   /* .projects img:hover{
@@ -134,16 +151,16 @@ body{
     }
   
     .navbar{
-      background-color:#337CCF!important;
+      background-color: #525CEB!important;
     }
     nav .scroll{
       color:black !important;
     }
   
-    /* .vision h1{
-      color: #1450A3;
+    .vision h1{
+      color: #3D3B40;
       font-size: 5.5vh;
-    } */
+    }
 
     .about-us h1{
       color: #000000;
@@ -154,6 +171,11 @@ body{
       color: #000000;
      
     }
+
+    .why{
+      
+    }
+  
     /* .services h1{
       color: #1450A3;
      
@@ -324,5 +346,32 @@ body{
 
       /* contact form */
       .contact-form{
-        background-color:#337CCF !important;
+        background-color:#525CEB !important;
       }
+
+      @media only screen and (min-width: 320px) and (max-width: 767.98px) {
+       #topContent{
+
+        display: flex !important;
+        flex-direction: column !important;
+       }
+       #topContent .ct i{
+        font-size: 20px !important;
+       }
+       #topContent .ct i span{
+        font-size: 13px !important;
+       }
+
+       #topContent .brand span{
+        font-size: 13px !important;
+        position: none !important;
+       }
+
+       .navbar{
+        
+       }
+
+
+        }
+      
+      
