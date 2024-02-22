@@ -407,6 +407,34 @@ body{
             font-size: 12px;
            }
 
+           .services{
+            padding: 0 !important;
+            margin-top: 0 !important;
+          }
+
+           .services h1{
+            font-size: 20px;
+           }
+           .services p{
+             font-size: 12px;
+            }
+
+            .about{
+              padding: 0 !important;
+              margin-top: 0 !important;
+            }
+  
+             .about h1{
+              font-size: 20px;
+             }
+             .about p{
+               font-size: 12px;
+              }
+
           .w-xs-50 {
             width: 50% !important;
-          } }
+          }
+          .projects h1{
+            padding:0 !important;
+          }
+        }

@@ -82,7 +82,7 @@
                       <div class=" collapse navbar-collapse container" id="navbarNavDropdown">
                           <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                              <a class="nav-link mx-1 active " aria-current="page" href="#">HOME</a>
+                              <a id="resetLink" class="nav-link mx-1 active " aria-current="page" href="#">HOME</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link mx-1" href="#about">ABOUT</a>
@@ -259,7 +259,7 @@
                 </section>
                 <!-- services -->
                  
-                <div id="about" style="margin-top:80px; " class="start container text-center shadow p-5">
+                <div id="about" style="margin-top:80px; " class="about container text-center shadow p-5">
                   <div class="row  mx-auto container mx-auto">
                           <div style="background-color:#525CEB ;" class="col p-5 shadow m-3" data-aos="fade-right">
                           <h1 class="text-light" >ABOUT US</h1>
@@ -270,7 +270,7 @@
 
                 <!-- end of projects -->
                 
-                <div id="why" style="margin-top:80px; background-color:#3D3B40" class="start container text-center shadow p-5">
+                <div id="services" style="margin-top:80px; background-color:#3D3B40" class="services container text-center shadow p-5">
                   <div class="row  mx-auto container mx-auto">
                           <div style="background-color:#3D3B40 ;" class="col p-5 shadow m-3" data-aos="fade-right">
                           <h1 class="text-light" >SERVICES</h1>
@@ -379,5 +379,14 @@
             <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            
+
+            <script>
+              $("#navbarNavDropdown a:not(.dropdown-toggle)").click(function() {
+                $("#navbarNavDropdown").collapse("hide");
+              });
+            </script>
+    
+    
     </body>
 </html>
